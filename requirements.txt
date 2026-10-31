@@ -1,0 +1,28 @@
+fastapi
+uvicorn[standard]
+python-multipart
+
+langchain
+langchain-community
+langchain-core
+langchain-huggingface
+langchain-groq
+langsmith
+
+sentence-transformers
+faiss-cpu
+
+python-dotenv
+PyYAML
+pydantic
+loguru
+
+streamlit
+requests
+# LlamaIndex
+llama-index-core
+llama-index-embeddings-huggingface
+llama-index-vector-stores-faiss
+
+# CrewAI
+crewai

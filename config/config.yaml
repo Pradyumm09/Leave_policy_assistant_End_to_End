@@ -1,0 +1,31 @@
+app:
+  name: "Leave Policy Assistant"
+  version: "1.0.0"
+  description: "Agentic RAG-based Leave Policy Assistant"
+
+embedding:
+  model: "BAAI/bge-small-en-v1.5"
+  device: "cpu"
+
+retrieval:
+  top_k: 5
+  confidence_threshold: 0.45
+
+llm:
+  provider: "groq"
+  model: "openai/gpt-oss-120b"
+  temperature: 0.0
+  ollama_model: "llama3.2:3b"
+
+paths:
+  knowledge_base: "data/knowledge_base.json"
+
+  # Existing RAG store
+  vector_store: "data/vector_store"
+
+  # New Agentic RAG store
+  llamaindex_store: "data/llamaindex_store"
+
+hr:
+  contact_email: "hr@example.com"
+  contact_label: "HR Team"
